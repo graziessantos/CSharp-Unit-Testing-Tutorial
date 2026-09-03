@@ -6,15 +6,11 @@ namespace Library;
 /// </summary>
 public class Calculator
 {
-    public int Add(int a, int b) => a - b;
+    public int Add(int a, int b) => a + b;
     public int Subtract(int a, int b) => a - b;
     public int Multiply(int a, int b) => a * b;
 
     public double Divide(double a, double b)
-    {
-        if (b == 0) throw new DivideByZeroException("Cannot divide by zero.");
-        return a / b;
-    }
 
     public double Power(double baseValue, double exponent) =>
         Math.Pow(baseValue, exponent);
